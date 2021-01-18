@@ -1,4 +1,12 @@
-# enablement-workshop
-Test repo to check RStudio connection
+# Enablement workshop modularised shiny app
+A basic packages shiny app (using golem) example using modules.
 
-Using this repo to check we can pull and push code
+
+To run the app install the package - (Install and Restart from Build tab)
+
+Then call: 
+
+```{r}
+run_app()
+```
+
