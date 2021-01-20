@@ -2,5 +2,8 @@
 
 export(run_app)
 import(shiny)
-importFrom(shiny,addResourcePath)
-importFrom(shiny,runApp)
+importFrom(config,get)
+importFrom(golem,with_golem_options)
+importFrom(shiny,NS)
+importFrom(shiny,shinyApp)
+importFrom(shiny,tagList)
