@@ -22,7 +22,7 @@ mod_air_plot_server <- function(input, output, session){
  
   output$plot1 <- renderPlot({
     air_data <- na.omit(airquality)
-    plot(air_data$Wind, air_data$Ozone, main = "Wind speed vs Ozone quality for the airquality data")
+    plot(air_data$Wind, air_data$Ozone, main = "Wind SPEED vs Ozone quality for the Air Quality data")
   })
   
 }

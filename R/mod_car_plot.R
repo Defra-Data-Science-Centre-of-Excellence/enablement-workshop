@@ -21,7 +21,7 @@ mod_car_plot_server <- function(input, output, session){
   ns <- session$ns
   
   output$plot1 <- renderPlot({
-    plot(mtcars$mpg, mtcars$hp, main = "Mpg vs Horsepower for the mtcars data")
+    plot(mtcars$mpg, mtcars$hp, main = "Mpg vs Horsepower for the mtcars data Units =??")
   })
 
     
@@ -56,3 +56,4 @@ mod_car_plot_server_2 <- function(input, output, session){
 ## To be copied in the server
 # callModule(mod_car_plot_server, "car_plot_ui_1")
  
+
