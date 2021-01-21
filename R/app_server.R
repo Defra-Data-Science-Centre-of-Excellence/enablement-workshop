@@ -3,8 +3,8 @@ app_server <- function(input, output,session) {
   
   output$app_body <- renderUI({
     tabsetPanel(
-      tabPanel("Cars", mod_car_plot_ui("car_plot_ui_1")),
-      tabPanel("Airquality", mod_air_plot_ui("air_plot_ui_1"))
+      tabPanel("Car Plots", mod_car_plot_ui("car_plot_ui_1")),
+      tabPanel("Airquality Plots", mod_air_plot_ui("air_plot_ui_1"))
     )
   })
   
