@@ -28,28 +28,6 @@ mod_car_plot_server <- function(input, output, session){
 }
  
 
-#' @importFrom shiny NS tagList 
-mod_car_plot_ui_2 <- function(id){
-  ns <- NS(id)
-  tagList(
-    plotOutput(ns("plot2"))
-  )
-}
-
-#' car_plot Server Function
-#'
-#' @noRd 
-mod_car_plot_server_2 <- function(input, output, session){
-  ns <- session$ns
-
-  
-  output$plot2 <- renderPlot({
-    plot(mtcars$disp, mtcars$wt, main = "Displacement vs weight for the matcars data")
-    
-  })
-  
-}
-
 ## To be copied in the UI
 # mod_car_plot_ui("car_plot_ui_1")
     
