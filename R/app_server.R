@@ -5,7 +5,8 @@ app_server <- function(input, output,session) {
     tabsetPanel(
 
       tabPanel("Cars Plots", mod_car_plot_ui("car_plot_ui_1")),
-      tabPanel("Airquality Plots", mod_air_plot_ui("air_plot_ui_1"))
+      tabPanel("Airquality Plots", mod_air_plot_ui("air_plot_ui_1")),
+      tabPanel("Iris plot", mod_iris_plot_ui("iris_plot_ui_1"))
 
     )
   })
@@ -13,5 +14,7 @@ app_server <- function(input, output,session) {
   # List the first level callModules here
   callModule(mod_car_plot_server, "car_plot_ui_1")
   callModule(mod_air_plot_server, "air_plot_ui_1")
+  callModule(mod_iris_plot_server, "iris_plot_ui_1")
+  
   print("Hello")
 }
