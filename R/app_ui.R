@@ -5,7 +5,7 @@ app_ui <- function() {
     golem_add_external_resources(),
     # List the first level UI elements here 
     fluidPage(
-      h1("An app displaying various plots"),
+      h1("An app displaying Vehicle Power and Air Quality plots"),
       uiOutput("app_body")
     
     )
