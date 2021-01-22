@@ -1,8 +1,8 @@
 Package: moduleApp
-Title: An Amazing Shiny App
-Version: 0.0.0.9000
+Title: An Incredible (!) Shiny App
+Version: 0 0.0.1
 Authors@R: person("firstname", "lastname", email = "your@email.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Shiny app showing some cool charts
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
