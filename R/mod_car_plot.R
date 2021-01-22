@@ -21,7 +21,7 @@ mod_car_plot_server <- function(input, output, session){
   ns <- session$ns
   
   output$plot1 <- renderPlot({
-    plot(mtcars$mpg, mtcars$hp, main = "Mpg vs Horsepower for the mtcars data Units =??")
+    plot(mtcars$mpg, mtcars$hp, main = "Mpg vs Horsepower for the mtcars data Units = Mpg")
   })
 
     
